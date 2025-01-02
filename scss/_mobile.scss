@@ -1,0 +1,146 @@
+// TABLES AND SMALLER
+@media(max-width: 768px) {
+    #header {
+        &__home {
+            height: 30rem;
+
+            .header-content {
+                h1 {
+                    font-size: 2.6rem;
+                }
+            }
+        }
+    }
+
+    #home__a .skills,
+    #home__b .profile,
+    #home__c .process {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #about-b {
+        display: none;
+    }
+
+    #contact {
+        .border-bottom-contact2 {
+            display: none;
+        }
+    }
+}
+
+@media(max-width: 1120px) {
+    #contact {
+        .border-bottom-contact3 {
+            width: 25rem;
+        }
+    }
+}
+
+@media(max-width: 910px) {
+    #contact {
+        .border-bottom-contact3 {
+            width: 20rem;
+        }
+    }
+}
+
+
+
+
+// TOP VERSION 
+
+@media(min-width: 576px) {
+    .main-nav {   
+        &__logo {
+            height: 50px;
+        }
+    }
+    
+    li {
+        padding: 1rem;
+    }
+}
+
+@media(min-width: 768px) {
+    #header {
+        &__home {
+            height: 100vh;
+        }
+    }
+
+    #home__a .skills {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+
+    #home__b .profile {
+        grid-template-columns: repeat(4, 1fr); 
+    }
+
+    #home__c .process {
+        grid-template-columns: repeat(4, 1fr); 
+        padding: 0 6rem;
+    }
+
+    .main-nav {
+        li {
+            a {
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    #about {
+        &-a {
+            .info {
+                grid-template-columns: 1fr 2fr;
+            }
+
+        }
+    }
+}
+
+
+// MOBILE 
+@media(max-width: 576px) {
+    #header {
+        &__home {
+            height: 10rem;
+            border-radius: 2px solid $primary-color;
+            background-position: 20% 30%;
+
+            .header-content {
+              display: none;
+            }
+        }
+    }
+
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+
+        &__logo {
+            height: 40px;
+        }
+
+        li {
+            padding: .7rem;
+            a {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    #home__a .skills,
+    #home__b .profile,
+    #home__c .process {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    #main-footer {
+        .social .fab {
+            font-size: 1rem;
+        }
+    }
+}

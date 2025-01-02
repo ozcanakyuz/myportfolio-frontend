@@ -1,0 +1,52 @@
+#about {
+    &-a {
+        .info {
+            display: grid;
+            gap: 1.2rem;
+
+            &__image{
+                border: 1px solid $medium-color;
+                padding: .5rem;
+                border-radius: 3px;
+                
+            }
+
+            &__bio{
+                border: 1px solid $medium-color;
+                padding: .8rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border-radius: 3px;
+            }
+        }
+    }
+
+    &-b {
+        background-color: $footer-color;
+        padding: 3rem 0;
+
+        .gallery {
+            display: flex;
+            height: 15rem;
+            gap: .5rem; 
+            align-items: center;   
+            padding: 0 2rem;
+            
+            & > div {
+                border: 2px solid rgba(230, 230, 230, 0.752);
+                padding: .2rem;
+                width: 2rem;
+                flex: 1;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+
+                &:hover {
+                    flex: 2;
+                }
+            }
+        }
+    }
+}

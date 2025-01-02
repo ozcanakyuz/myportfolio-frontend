@@ -1,0 +1,21 @@
+#contact {
+    background-color: $footer-color;
+    padding: 2rem 0;
+    margin: 2rem 0;
+
+    .block-heading {
+        text-align: center;
+    }
+
+    .row {
+        &__info {
+            display: flex;
+            justify-content: center;
+
+            .c-detail {
+                padding: .5rem 0;
+            }
+        }
+
+    }
+}
